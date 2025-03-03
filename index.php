@@ -23,6 +23,7 @@ ini_set('display_errors', 1);
         <p class="text-center">
         A Vicz Implementos/Rodosul foi criada para ser referência no Estado do Tocantins. Seus fundadores são oriundos de Cascavel, Paraná, onde atuaram por mais de 15 anos, na gestão de fábricas de implementos rodoviários, consultoria em área de inspeção de produtos perigosos e consultoria jurídica na área de produtos perigosos. Inicialmente, vieram para o Tocantins para atividades agrícolas, e após seis meses no Estado, perceberam a carência de serviços na área de produtos perigosos, fundando assim a empresa para suprir essa lacuna.A Vicz Implementos/Rodosul foi criada para ser referência no Estado do Tocantins. Seus fundadores são oriundos de Cascavel, Paraná, onde atuaram por mais de 15 anos, na gestão de fábricas de implementos rodoviários, consultoria em área de inspeção de produtos perigosos e consultoria jurídica na área de produtos perigosos. Inicialmente, vieram para o Tocantins para atividades agrícolas, e após seis meses no Estado, perceberam a carência de serviços na área de produtos perigosos, fundando assim a empresa para suprir essa lacuna.
         </p>
+        asdgysagydgsaygdygsaygdyasygdasdphais
     </section>
     <section id="implementos-home" class="container my-5">
     <h2  class="text-center text-primary">Confira Nossos Implementos</h2>
