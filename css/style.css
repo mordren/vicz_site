@@ -1,0 +1,184 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa; /* Cor de fundo neutra */
+}
+
+/* ====== CABEÇALHO ====== */
+header {
+    background: #002147;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Azul claro para destaque */
+}
+
+main{
+    flex: 1; 
+}
+
+/* ====== BANNER COM VÍDEO ====== */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Ajustado para melhor proporção */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sobreposição Azul Transparente */
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-overlay p {
+    font-size: 1.2rem;
+}
+
+.about{
+    background-color: red;
+}
+
+/* ====== SEÇÕES ====== */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+/* ====== PRODUTOS ====== */
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.produto {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+    background: #002147;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+    .banner {
+        height: 50vh;
+    }
+    
+    .banner-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .banner-overlay p {
+        font-size: 1rem;
+    }
+
+/* Centralizar logo SOMENTE no mobile */
+    @media (max-width: 991px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+    }
+    }
+}
+
+/* Estilização do botão do WhatsApp */
+.btn-success {
+    background-color: #4CAF50 !important; /* Verde mais claro */
+    border-color: #4CAF50 !important;
+    color: white !important;
+}
+
+.btn-success:hover {
+    background-color: #45A049 !important; /* Um tom um pouco mais escuro no hover */
+    border-color: #45A049 !important;
+}
+
