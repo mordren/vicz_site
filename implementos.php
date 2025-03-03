@@ -16,7 +16,7 @@
                     <h3>' . $row["nome"] . '</h3>
                     <p>' . $row["descricao"] . '</p>
                     <p><strong>R$ ' . number_format($row["preco"], 2, ',', '.') . '</strong></p>
-                    <a href="implemento.php?id=' . $row["id"] . '" class="btn btn-primary">Ver Detalhes</a>
+                    <a href="implemento.php?id=' . $row["id"] . '" class="btn buy">Ver Detalhes</a>
                   </div>';
         }
         mysqli_close($conn);

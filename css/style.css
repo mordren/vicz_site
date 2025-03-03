@@ -4,6 +4,10 @@ html, body {
     flex-direction: column;
 }
 
+h2, h3 {
+    color: #1c294b !important;    
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -12,7 +16,7 @@ body {
 
 /* ====== CABEÇALHO ====== */
 header {
-    background: #002147;
+    background: #1c294b;
     color: white;
     padding: 20px;
 }
@@ -91,18 +95,9 @@ main{
     font-size: 1.2rem;
 }
 
-.about{
-    background-color: red;
-}
-
 /* ====== SEÇÕES ====== */
 section {
     padding: 40px 20px;
-}
-
-h2 {
-    color: #002147;
-    margin-bottom: 20px;
 }
 
 /* ====== PRODUTOS ====== */
@@ -141,33 +136,47 @@ footer {
     width: 100%;
 }
 
-/* ====== RESPONSIVIDADE ====== */
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+}
+
+/* Ajuste quando o menu está expandido */
 @media (max-width: 768px) {
-    .banner {
-        height: 50vh;
-    }
-    
-    .banner-overlay h1 {
-        font-size: 2rem;
+    .navbar-collapse {
+        background-color: #1c294b; /* Mantém o fundo azul */
+        padding: 10px; /* Adiciona um espaço interno */
     }
 
-    .banner-overlay p {
-        font-size: 1rem;
+    .navbar-nav {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        width: 100%;
+        text-align: center;
     }
 
-/* Centralizar logo SOMENTE no mobile */
-    @media (max-width: 991px) {
-    .navbar-brand {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+    .nav-item {
+        padding: 10px 0;
     }
 
-    .navbar-toggler {
-        position: absolute;
-        right: 15px;
+    /* Ajuste da altura da logo no mobile */
+    .navbar-brand img {
+        width: 90px; /* Reduz tamanho */
+        height: auto;
     }
-    }
+}
+
+.buy {
+    background-color: #002147 !important;
+    color: white !important;
+    size: 200px;
 }
 
 /* Estilização do botão do WhatsApp */

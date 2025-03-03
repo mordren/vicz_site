@@ -41,7 +41,6 @@ $row = $result->fetch_assoc();
     </div>
 </section>
 
-
 <?php mysqli_close($conn); ?>
 
 <?php include 'includes/footer.php'; ?>

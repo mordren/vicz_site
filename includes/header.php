@@ -11,11 +11,11 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002147;">
-    <div class="container">
-        
-        <!-- Logo centralizado SOMENTE no mobile -->
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark w-100" style="background-color: #1c294b;">
+    <div class="container-fluid">
+
+        <!-- Logo centralizada no mobile -->
         <a class="navbar-brand mx-lg-0 mx-auto" href="index.php">
             <img src="./images/logo.png" width="120" height="80" class="d-inline-block align-center" alt="Logo">
         </a>
@@ -26,13 +26,21 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="index.php">Início</a></li>
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item"><a class="nav-link text-white" href="./">Início</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="implementos.php">Implementos</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="sobre.php">Sobre Nós</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="contato.php">Contato</a></li>
+            
+            <li>            
+                <form action="busca.php" method="GET" class="d-flex ms-lg-3 mt-2 mt-lg-0">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Buscar implemento..." required>
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </li>
             </ul>
-        </div>
 
+        </div>
     </div>
 </nav>
+

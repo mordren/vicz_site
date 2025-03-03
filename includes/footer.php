@@ -1,6 +1,6 @@
 <!-- includes/footer.php -->
-<footer class="text-white text-center py-3" style="background-color: #002147; width: 100%;">
-    <p>&copy; <?php echo date('Y'); ?> Vicz Implementos/Rodosul - Todos os direitos reservados.</p>
+<footer class="text-white text-center py-3" style="background-color: #1c294b; width: 100%;">
+    <p>&copy; <?php echo date('Y'); ?> Vicz Implementos - Todos os direitos reservados.</p>
 </footer>
 
 <!-- Bootstrap JS -->
