@@ -1,12 +1,16 @@
 <?php
-$servername = "localhost";
-$database = "u833298392_vicz";
-$username = "u833298392_mordren";
-$password = "7:aMtn?W";
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+
+include __DIR__ . '/../config/config.php';
+
+if (basename($_SERVER['PHP_SELF']) == "conexao.php") {
+    die("Acesso negado!");
 }
+
+
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+if ($conn->connect_error) {
+    die("Erro na conexão");
+}
+
+
 ?>

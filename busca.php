@@ -1,17 +1,27 @@
 <?php
 include 'db/conexao.php';
 include 'includes/header.php';
-
+session_start();
+if (!isset($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
 $q = isset($_GET['q']) ? trim($_GET['q']) : '';
 
-$sql = "SELECT * FROM implementos WHERE nome LIKE '%$q%' OR descricao LIKE '%$q%'";
-$result = mysqli_query($conn, $sql);
+$stmt = mysqli_prepare($conn, "SELECT * FROM implementos WHERE nome LIKE ?");
+$busca = "%".$_GET['q']."%";
+mysqli_stmt_bind_param($stmt, "s", $busca);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
 ?>
 
 <main class="container">
     <h2 class="text-center">Resultados da Busca</h2>
     <div class="produtos-container">
         <?php
+        if ($_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+            die("Erro de segurança: Requisição inválida.");
+        }
+
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="produto">
@@ -31,3 +41,5 @@ $result = mysqli_query($conn, $sql);
 </main>
 
 <?php include 'includes/footer.php'; ?>
+
+
