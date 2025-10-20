@@ -25,21 +25,6 @@ Estrutura otimizada para SEO básico (meta tags, URLs limpas, .htaccess).
 
 Totalmente compatível com mobile (responsivo).
 
-🧱 Estrutura do Projeto
-vicz_site/
-├── css/               # Estilos e layout
-├── db/                # Conexão com banco e utilitários PHP
-├── images/            # Imagens estáticas
-├── includes/          # Cabeçalho, rodapé e componentes
-├── uploads/           # Uploads de imagens (opcional)
-├── index.php          # Página inicial
-├── implementos.php    # Catálogo de produtos
-├── implemento.php     # Página de produto individual
-├── busca.php          # Sistema de busca
-├── contato.php        # Formulário de contato
-├── sobre.php          # Página institucional
-└── .htaccess          # Regras de reescrita e roteamento
-
 ⚙️ Stack Técnica
 
 Backend: PHP 7.4+ (recomendado PHP 8.x)
